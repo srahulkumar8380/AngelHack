@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="573dp"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="@string/login_title"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/login_usernameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/userpass_stroke"
+                    android:drawableLeft="@drawable/username"
+                    android:drawablePadding="15dp"
+                    android:elevation="4dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/text_username"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/login_passwordId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_usernameId"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/userpass_stroke"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="15dp"
+                    android:elevation="4dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/text_password"
+                    android:inputType="textWebPassword"
+                    android:padding="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/login_buttonId"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_passwordId"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/text_login"
+                    android:textColor="#ffffff" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/member_login"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/login_buttonId"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="@string/login_member"-->
+                    <!--android:textColor="#1976D2"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <Button
+                    android:id="@+id/login_createAccount"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_buttonId"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/text_createAccount"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+</RelativeLayout>

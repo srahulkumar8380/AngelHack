@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bus_service"
+            android:icon="@drawable/edit_profile"
+            android:title="Bus Service" />
+        <item
+            android:id="@+id/bus_locate"
+            android:icon="@drawable/bus"
+            android:title="Locate Your Bus" />
+        <item
+            android:id="@+id/app_setting"
+            android:icon="@drawable/app_setting"
+            android:title="App Setting" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Rate The App" />
+
+        </menu>
+    </item>
+
+</menu>
